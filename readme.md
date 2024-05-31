@@ -7,7 +7,22 @@ Projects written with free software Vivado using VHDL (no Verilog).
 
 Download and install Xilinx/AMD Vivado ML (standard edition is free, but requires and account).
 
-(More following later...)
+Add the board in Vivado:
+
+* Menu: Tool -> Vivado store
+* Tab: Boards
+* Click refresh to update the boards
+* Instal: Digilent Nexus A7-100T
+
+Create project:
+
+* Menu: File -> Project -> New
+* Enter project name and location
+* Select RTL project
+* Select board: Nexys A7-100T
+* Finish
+* Project settings:
+  * Target language: VHDL
 
 ## Links
 
