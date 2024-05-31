@@ -7,14 +7,14 @@ Projects written with free software Vivado using VHDL (no Verilog).
 
 Download and install Xilinx/AMD Vivado ML (standard edition is free, but requires and account).
 
-Add the board in Vivado:
+### Add the board in Vivado:
 
 * Menu: Tool -> Vivado store
 * Tab: Boards
 * Click refresh to update the boards
 * Instal: Digilent Nexus A7-100T
 
-Create project:
+### Create project:
 
 * Menu: File -> Project -> New
 * Enter project name and location
@@ -23,6 +23,22 @@ Create project:
 * Finish
 * Project settings:
   * Target language: VHDL
+* Add the constraints file to the project:
+  * Menu: File -> Add sources
+  * Add or create contraints
+  * Add files
+  * Select the nexys_a7_100t.xdc from this repo
+  * Check: Copy contraints file into project
+  * Finish
+
+### Programming the flash
+
+* Enable generate bin file in Bitstream Settings
+* Add the following lines to the project XDC file to speed up loading of the bit file (if not there already):
+  * set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+  * set_property BITSTREAM.GENERAL.COMPRESS true [current_design]
+* Add the flash to the hardware manager:
+  * Flash: s25fl128sxxxxxx0-spi-x1_x2_x4
 
 ## Links
 
