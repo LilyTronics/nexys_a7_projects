@@ -1,6 +1,6 @@
 # Nexys A7 projects
 
-Project for the Digilent Nexus A7 development board (Xilinx/AMD Artix-7-100T)
+Project for the Digilent Nexus A7 development board (Xilinx/AMD Artix-7-100T).\
 Projects written with free software Vivado using VHDL (no Verilog).
 
 ## Setup the project
