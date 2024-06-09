@@ -32,16 +32,7 @@ Download and install Xilinx/AMD Vivado ML Standard (standard edition is free, bu
     * Click 'Add Configuration Memory Device' in the project tree
     * Select: s25fl128sxxxxxx0-spi-x1_x2_x4
     * Click OK
-* Add the constraints file to the project:
-  * Menu: File -> Add sources
-  * Add or create contraints
-  * Add files (click the plus button)
-  * Select the nexys_a7_100t.xdc from this repo
-  * Check: Copy contraints file into project
-  * Finish
-  * Add the following lines to the project XDC file to speed up loading of the bit file (if not there already):
-    * set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
-    * set_property BITSTREAM.GENERAL.COMPRESS true [current_design]
+* Add the project files to the Vivado project
 
 ## Links
 
